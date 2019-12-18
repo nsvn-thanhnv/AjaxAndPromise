@@ -11,7 +11,9 @@
         Promise có 3 trạng thái:
         - pending: đang xử lí
         - fulfilled: đã hoàn thành
-        - rejected: đã bị từ chối 
+        - rejected: đã bị từ chối
+        Hàm reject trong .then(resolve, reject) chỉ có thể chụp được lỗi từ những .then() phía trước nó, 
+        mà không thể bắt được lỗi xảy ra trong hàm resolve cùng cấp
         */
         class User {
             constructor(user) {
